@@ -1,0 +1,56 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+      
+
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    margin: 20px;
+
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(28, 28, 204);
+    font-weight: bold;
+    
+   
+}
+
+
+
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    margin: 25px 25px 25px 0;
+    
+   
+
+}
+
+span{
+    color: red;
+}
+
+img{
+    align-content: center;
+}

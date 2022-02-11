@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../HOME/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="example_1.css">
+</head>
+<body>
+    <header class="container header-nav">
+        <h1>Без доплаты по тарифу и таксам, без штрафов и без оформления нового билета - <span class="rev">(RV) РЕВАЛИДАЦИЯ.</span></h1>
+
+        <div class="container content">
+            <h3>1-й ШАГ. Открываем бронирование (PNR)</h3>
+            <p>RT номер брони (PNR)</p>
+            <img src="img/example_1.png" alt=""><br><br>
+    
+            <h3>2-й ШАГ. Открываем запись электронного билета (по номеру строки FA)</h3>
+            <p>TWD/L11</p>
+            <img src="img/example_2.png" alt=""><br><br>
+
+            <h3>3-й ШАГ. Проверяем статус электронного билета.</h3>
+            <p>Должен быть «О»</p>
+            <img src="img/example_3.png" alt=""><br><br>
+
+            <h3>4-й ШАГ. Проверяем оплаченные таксы.</h3>
+            <p>TWD/TAX</p>
+            <img src="img/example_4.png" alt=""><br><br>
+
+            <h3>5-й ШАГ. Вызываем правила тарифа билета принятого к обмену.</h3>
+            <h3>FQD «откуда» «куда» /A «авиакомпания» /D «дата вылета» / R, «дата продажи» / C «класс»</h3>
+            <p>FQDTASMMK/ASU/D11APR*24APR/R,10FEB22/CT</p>
+            <img src="img/example_5.png" alt=""><br><br>
+            <p>FQDTASMMK/ASU/D11APR*24APR/R,10FEB22/CN</p>
+            <img src="img/example_5_1.png" alt=""><br><br>
+
+            <h3>6-й ШАГ. Читаем правила тарифа билета принятого к обмену. Так как в данном авиабилете участвуют два тарифа, нам нужно проверить условия обоих тарифа и так как авиабилет полностью не использован применить штраф тарифа у которого сумма штрафа больше.</h3>
+            <p>FQN03//PE</p>
+            <img src="img/example_6_1.png" alt="">
+            <p>FQN02//PE</p>
+            <img src="img/example_6_2.png" alt=""> <br><br>
+            <h3>Как видно, по правилам обоих тарифа авиакомпания разрешает производить обмен как частично использованного, так и полностью неиспользованного билета без штрафа. <br>Итак, по правилам тарифа обмен возможен без удержания штрафа и если нет добора по тарифу и таксам, тогда делаем Ревалидацию авиабилета.</h3><br><br>
+
+            <h3>7-й ШАГ. Возвращаемся в бронирование.</h3>
+            <p>RT</p>
+            <img src="img/example_7_1.png" alt=""><br><br>
+
+            <h3>8-й ШАГ. Меняем даты вылета. Для примера на перелете туда (строка 2 и 3).</h3>
+            <p>SB 04APR 2,3</p>
+            <img src="img/example_8_1.png" alt=""><br><br>
+
+            <h3>9-й ШАГ. Сохраняем изменения.</h3>
+            <p>RFUTKUR; ER</p><br><br>
+
+            <h3>10-й ШАГ. Открываем PNR.</h3>
+            <p>RT</p>
+            <img src="img/example_9_1.png" alt=""><br><br>
+
+            <h3>11-й ШАГ. Открываем запись электронного билета (по номеру строки FA)</h3>
+            <p>TWD/L11</p>
+            <img src="img/example_11_1.png" alt=""><br><br>
+
+            <h3>12-й ШАГ. ОФОРМЛЯЕМ РЕВАЛИДАЦИЮ</h3>
+            <h3>Как видно из примера, перебронирование сегментов в PNR (2-3) на новую дату 04APR никак не повлияло на запись электронного билета. Дата перелета в купонах электронного билета <br>(1-2) по-прежнему 11APR.</h3>
+            <p>Наша задача при ревалидации:</p>
+            <h3>синхронизировать запись билета с новыми изменениями в бронировании, т.е. произвести ревалидацию. Для этого вводим команду ревалидации, учитывая что:</h3>
+            <img src="img/example_12_1.png" alt="">
+            <p>RFUTKUR; ER</p>
+            <h3>TTP/ETRV/L<span>11</span>/S<span>2-3</span>/ E<span>1-2</span>/RT</h3>
+            <img src="img/example_12_2.png" alt="">
+            <br><br>
+           
+
+
+        </div>
+
+
+
+    </header>
+
+    <footer>
+        <a href="../HOME/index.html">
+            <img src="../HOME/img/amadeus_logo.png" alt="">
+        </a>
+    </footer>
+    
+</body>
+</html>

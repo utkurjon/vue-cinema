@@ -1,0 +1,80 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+      
+
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    margin: 20px;
+
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(28, 28, 204);
+    font-weight: bold;
+    
+   
+}
+
+
+
+.btn {
+    
+    font-size: 30px;
+    color: rgb(28, 28, 204);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(247, 131, 23);
+    padding: 15px;
+    border-radius: 8px;
+    transition: 500ms;
+    
+    
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(28, 28, 204);
+    font-weight: bold;
+    margin: 25px 25px 25px 0;
+    
+    
+
+}
+
+.rev{
+    color: red;
+}
